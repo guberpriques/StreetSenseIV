@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atmosphere Voting App</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <style>
+    #map { height: 100vh; }
+    #vote-booth { display: inline-block; position: fixed; bottom: 10px; left: 10px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="vote-booth">
+    <button id="city">City</button>
+    <button id="country">Country</button>
+  </div>
+  <script src="firebaseConfig.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
